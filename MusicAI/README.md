@@ -17,16 +17,24 @@ The app highlights **listening trends, popularity metrics, genre overlap, and ar
 
 
  📄 Streamlit App (app.py) – Main application file
+ 
  📊 Data Analysis Functions – Playlist metadata, genre extraction, popularity metrics
+ 
  📈 Visualizations – KDE plots, genre breakdowns, artist overlap heatmaps
+ 
  🗂️ Spotify OAuth Integration – Secure authentication using Spotipy
+ 
 
  
 ---
 # 🗃️ Data Sources
+
  📌 Spotify Web API – Track metadata, artist information, popularity scores
+ 
  📌 User-provided Spotify Playlists (public playlists only)
+ 
  📌 Spotify Global 2025 Charts
+ 
 
 
 ⚙️ Setup Instructions
@@ -35,13 +43,19 @@ The app highlights **listening trends, popularity metrics, genre overlap, and ar
 
 ---
 # 1️⃣ Clone the repository:
+
  git clone https://github.com/your-username/spotify-wrapped-streamlit.git
+ 
  cd spotify-wrapped-streamlit
+ 
 #
 # 2️⃣ Create and activate a virtual environment (recommended):
  python -m venv venv
+ 
  source venv/bin/activate  # Mac/Linux
+ 
  venv\\Scripts\\activate     # Windows
+ 
 #
 #  3️⃣ Install dependencies:
 
@@ -52,11 +66,15 @@ The app highlights **listening trends, popularity metrics, genre overlap, and ar
 
 
  1️⃣ Create a Spotify Developer App
+ 
  🔗 https://developer.spotify.com/dashboard
+ 
 #
 
  2️⃣ Add the following Redirect URI:
+ 
  http://127.0.0.1:8501/callback
+ 
 #
 
  3️⃣ Create a .env file (or set environment variables):
