@@ -11,6 +11,12 @@ CLIENT_SECRET = os.getenv("SPOTIPY_CLIENT_SECRET")
 REDIRECT_URI  = os.getenv("SPOTIPY_REDIRECT_URI")
 SCOPE         = "user-library-read playlist-modify-private playlist-modify-public"
 
+if "SPOTIPY_CLIENT_ID" in st.secrets:
+    os.environ["SPOTIPY_CLIENT_ID"] = st.secrets["SPOTIPY_CLIENT_ID"]
+    os.environ["SPOTIPY_CLIENT_SECRET"] = st.secrets["SPOTIPY_CLIENT_SECRET"]
+    os.environ["SPOTIPY_REDIRECT_URI"] = st.secrets["SPOTIPY_REDIRECT_URI"]
+
+
 @st.cache_resource(show_spinner=False)
 def get_spotify_client():
     auth = SpotifyOAuth(client_id=CLIENT_ID, client_secret=CLIENT_SECRET,
