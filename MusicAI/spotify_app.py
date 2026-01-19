@@ -13,6 +13,8 @@ import numpy as np
 from spotipy.oauth2 import SpotifyOAuth
 from collections import Counter
 # ==================================================
+st.cache_data.clear()
+st.cache_resource.clear()
 
 
 # ===================== SECRETS → ENV =====================
