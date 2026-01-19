@@ -68,7 +68,7 @@ sp = get_spotify_client()
 def get_playlist_metadata_with_ids(playlist_id, source):
     tracks, results = [], sp.playlist_tracks(
         playlist_id,
-        fields="items.track.id,items.track.name,items.track.artists,items.track.popularity,next"
+        fields="items.track.id,items.track.name,items.track.artists,items.track.popularity,next",
         market="US" #added recently because streamlit was missing this parameter
     )
 
